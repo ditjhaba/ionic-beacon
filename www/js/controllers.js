@@ -7,7 +7,7 @@ angular.module('ionic.beacon', [])
         $ionicPlatform.ready(function () {
             $cordovaBeacon.requestWhenInUseAuthorization();
 
-            $rootScope.$scope.$on('$cordovaBeacon:didRangeBeaconsInRegion', function (event, pluginResult) {
+            $rootScope.$on('$cordovaBeacon:didRangeBeaconsInRegion', function (event, pluginResult) {
                 var uniqueBeaconKey;
 
                 for (var i = 0; i < pluginResult.beacons.length; i++) {
