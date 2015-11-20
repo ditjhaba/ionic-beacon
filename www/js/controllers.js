@@ -1,6 +1,5 @@
-angular.module('ionic.beacon', [])
-    .controller("ionic.beacon", ['$scope', '$rootScope', '$ionicPlatform', '$cordovaBeacon'],
-    function ($scope, $rootScope, $ionicPlatform, $cordovaBeacon) {
+angular.module('IonicBeaconController', [])
+    .controller('IonicBeaconController', ['$scope', '$rootScope', '$ionicPlatform', '$cordovaBeacon', function ($scope, $rootScope, $ionicPlatform, $cordovaBeacon) {
 
         $scope.beacons = {};
 
@@ -23,4 +22,4 @@ angular.module('ionic.beacon', [])
                 $cordovaBeacon.createBeaconRegion("testing", "61687109-905F-4436-91F8-E602F514C96D")
             );
         });
-    });
+    }]);
