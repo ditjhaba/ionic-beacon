@@ -1,4 +1,4 @@
-angular.module('ionic-beacon', ['ionic', 'ngCordovaBeacon', 'IonicBeaconController'])
+angular.module('ionic-beacon', ['ionic', 'IonicBeaconController'])
 
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
