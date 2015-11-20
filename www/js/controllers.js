@@ -20,6 +20,7 @@ angular.module('ionic.beacon', [])
             });
 
             $cordovaBeacon.startRangingBeaconsInRegion(
-                $cordovaBeacon.createBeaconRegion("testing", "61687109-905F-4436-91F8-E602F514C96D"));
+                $cordovaBeacon.createBeaconRegion("testing", "61687109-905F-4436-91F8-E602F514C96D")
+            );
         });
     });
